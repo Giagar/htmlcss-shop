@@ -13,6 +13,7 @@ html {
 
 /* ----header */
 header {
+  /* inserito variabili per calcolare margine verticale main */
   --header-vertical-padding: 2rem;
   background: lightblue;
   text-align: center;
@@ -24,6 +25,7 @@ header {
 }
 
 header h1 {
+  /* inserito variabili per calcolare margine verticale main */
   --h1-font-size: 2.5rem;
   padding-bottom: 0.5rem;
   text-transform: uppercase;
@@ -44,6 +46,8 @@ header h1::after {
 main {
   width: 60rem;
   margin: 13rem auto;
+
+  /* ?non funziona? */
   /* margin: calc(var(--header-vertical-padding)+var(--h1-font-size)+5rem) auto; */
 }
 
