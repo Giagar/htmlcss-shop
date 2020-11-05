@@ -1,0 +1,65 @@
+
+/* ----generic */
+html {
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 20px 0 40px;
+}
+/* ----/generic */
+
+/* ---item */
+.item {
+  width: 32.5%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+}
+/* ---/item */
+
+/* ---badge */
+.item .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: green;
+  padding: 2px 4px;
+}
+
+.item:nth-child(2) .badge {
+  background: red;
+}
+/* ---/badge */
+
+/* ---heart */
+.heart {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 24px;
+  display: none;
+  color: red;
+}
+
+.item:hover .heart {
+  display: block;
+}
+/* ---/heart */
