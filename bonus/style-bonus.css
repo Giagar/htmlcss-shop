@@ -94,4 +94,8 @@ main {
   color: red;
   display: none;
 }
+
+.item:hover .heart {
+  display: block;
+}
 /* ----/img, badge, heart */
